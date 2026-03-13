@@ -11,8 +11,6 @@ export const env: Env = plainToInstance(Env, {
   jwtSecret: process.env.JWT_SECRET,
 });
 
-console.log(env);
-
 const errors = validateSync(env);
 console.log(errors);
 
